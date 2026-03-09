@@ -81,7 +81,7 @@ keeping performance statistics across sessions.
 SEED = random.randint(0, 10_000_000)   # auto seed
 random.seed(SEED)
 
-NUM_QUESTIONS = 25
+NUM_QUESTIONS = 20
 
 OUTPUT_FILE = BASE_DIR / f"numpy_speed_drill_seed_{SEED}.ipynb"
 STATS_FILE = "C:/Users/fbase/All_vscode_projects/numpyGithubRepo/daily-exercises/speed-drills/drill_stats.json"
