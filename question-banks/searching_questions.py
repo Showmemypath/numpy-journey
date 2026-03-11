@@ -1,0 +1,93 @@
+# LIST NAMES MUST END WITH _QUESTIONS
+set_searching_QUESTIONS= [
+"Given A = np.array([[5,2,9],[1,7,3],[8,4,6]]), find the index of the maximum element using argmax.",
+"Given A = np.array([[5,2,np.nan],[1,7,3],[8,4,6]]), find the index of the maximum ignoring NaNs using nanargmax.",
+"Given A = np.array([[5,2,9],[1,7,3],[8,4,6]]), find the column index of the minimum value in each row using argmin with axis.",
+"Given A = np.array([[np.nan,2,9],[1,np.nan,3],[8,4,6]]), find the row index of the minimum value in each column ignoring NaNs.",
+"Given A = np.array([4,7,1,9,3,6]), return the position of the maximum value using argmax.",
+"Given A = np.array([4,7,1,9,3,6]), return the position of the minimum value using argmin.",
+"Given A = np.array([[3,0,5],[0,0,2],[7,0,1]]), return indices of all non-zero elements using nonzero.",
+"Given A = np.array([[3,0,5],[0,0,2],[7,0,1]]), return flattened indices of non-zero elements using flatnonzero.",
+"Given A = np.array([[3,0,5],[0,0,2],[7,0,1]]), return coordinates of elements greater than 3 using argwhere.",
+"Given A = np.arange(1,13).reshape(3,4), use where to return indices where elements are divisible by 4.",
+"Given A = np.arange(1,13).reshape(3,4), use where to replace elements greater than 8 with -1.",
+"Given A = np.arange(1,13).reshape(3,4), use where to create an array that keeps even numbers and replaces odd numbers with 0.",
+"Given A = np.array([10,20,30,40,50]), find the insertion index for value 35 using searchsorted.",
+"Given A = np.array([10,20,30,40,50]), find insertion indices for values [5,25,60] using searchsorted.",
+"Given A = np.array([10,20,30,30,30,40]), find insertion index for 30 using searchsorted with side='left'.",
+"Given A = np.array([10,20,30,30,30,40]), find insertion index for 30 using searchsorted with side='right'.",
+"Given A = np.arange(1,11), extract elements greater than 5 using extract.",
+"Given A = np.arange(1,11), extract elements that are multiples of 3 using extract.",
+"Given A = np.array([[2,7,4],[9,1,5],[3,8,6]]), find the flat index of the maximum element.",
+"Given A = np.array([[2,7,4],[9,1,5],[3,8,6]]), convert the flat index of the maximum element into row and column indices."
+]
+
+set_searching_patterns_QUESTIONS = [
+"Given A = np.array([3,7,2,9,5]), find the value of the maximum element using argmax.",
+"Given A = np.array([3,7,2,9,5]), replace the maximum element with -1 using argmax.",
+"Given A = np.array([[4,8,1],[6,3,9],[7,2,5]]), find the row containing the global maximum.",
+"Given A = np.array([[4,8,1],[6,3,9],[7,2,5]]), find the column containing the global minimum.",
+"Given A = np.array([1,5,2,7,3,9]), return indices of elements greater than 4 using where.",
+"Given A = np.array([1,5,2,7,3,9]), create an array where elements >4 become 1 else 0 using where.",
+"Given A = np.array([1,5,2,7,3,9]), replace odd numbers with -1 using where.",
+"Given A = np.array([[2,6,3],[8,1,7],[4,9,5]]), return coordinates of elements greater than the mean using argwhere.",
+"Given A = np.array([[2,0,3],[0,1,0],[4,0,5]]), count the number of non-zero elements using nonzero.",
+"Given A = np.array([[2,0,3],[0,1,0],[4,0,5]]), extract all non-zero values using nonzero.",
+"Given A = np.array([[2,0,3],[0,1,0],[4,0,5]]), extract non-zero values using flatnonzero.",
+"Given A = np.array([10,20,30,40,50]), find where value 25 should be inserted to maintain sorted order using searchsorted.",
+"Given A = np.array([10,20,30,40,50]), insert multiple values [15,35,60] using searchsorted to find positions.",
+"Given A = np.array([5,12,7,18,3,20]), extract elements greater than 10 using extract.",
+"Given A = np.array([5,12,7,18,3,20]), extract even numbers using extract.",
+"Given A = np.array([[1,4,7],[2,5,8],[3,6,9]]), find indices of values divisible by 3 using where.",
+"Given A = np.array([[1,4,7],[2,5,8],[3,6,9]]), find coordinates of values divisible by 3 using argwhere.",
+"Given A = np.array([[1,4,7],[2,5,8],[3,6,9]]), replace values divisible by 3 with 0 using where.",
+"Given A = np.array([[1,4,7],[2,5,8],[3,6,9]]), return flattened indices of elements greater than 5.",
+"Given A = np.array([[1,4,7],[2,5,8],[3,6,9]]), find the position of the smallest element ignoring NaNs using nanargmin after inserting a NaN at position (0,0)."
+]
+
+set_searching_combos_QUESTIONS = [
+"Given A = np.array([4,8,1,9,3]), find the value of the maximum element using argmax.",
+"Given A = np.array([4,8,1,9,3]), replace the maximum element with the mean of the array using argmax.",
+"Given A = np.array([[2,7,4],[9,1,5],[3,8,6]]), find coordinates of the maximum element using argmax and unravel_index.",
+"Given A = np.array([[2,7,4],[9,1,5],[3,8,6]]), set the global minimum element to 0 using argmin.",
+"Given A = np.array([[3,0,5],[0,0,2],[7,0,1]]), extract all non-zero elements using nonzero.",
+"Given A = np.array([[3,0,5],[0,0,2],[7,0,1]]), replace all zero elements with -1 using where.",
+"Given A = np.array([[3,0,5],[0,0,2],[7,0,1]]), find coordinates of all zero elements using argwhere.",
+"Given A = np.arange(1,16).reshape(3,5), extract elements greater than the row mean using where.",
+"Given A = np.arange(1,16).reshape(3,5), extract elements greater than the overall mean using extract.",
+"Given A = np.array([2,5,8,12,16]), determine positions where values [1,6,15] should be inserted using searchsorted.",
+"Given A = np.array([2,5,8,12,16]), insert value 10 into the correct sorted position using searchsorted.",
+"Given A = np.array([[5,2,9],[1,7,3],[8,4,6]]), find the row index of the largest value in each column using argmax with axis.",
+"Given A = np.array([[5,2,9],[1,7,3],[8,4,6]]), replace elements greater than 6 with their column mean using where.",
+"Given A = np.array([[np.nan,2,5],[4,np.nan,1],[7,3,6]]), find the position of the maximum value ignoring NaNs using nanargmax.",
+"Given A = np.array([[np.nan,2,5],[4,np.nan,1],[7,3,6]]), find the position of the minimum value ignoring NaNs using nanargmin.",
+"Given A = np.array([3,6,9,12,15]), create an array that marks multiples of 3 with 1 else 0 using where.",
+"Given A = np.array([[2,4,6],[1,3,5],[7,8,9]]), extract all even elements using extract.",
+"Given A = np.array([[2,4,6],[1,3,5],[7,8,9]]), return coordinates of even numbers using argwhere.",
+"Given A = np.array([[2,4,6],[1,3,5],[7,8,9]]), return flattened indices of elements greater than 5 using flatnonzero.",
+"Given A = np.array([10,20,30,40,50]), find where 35 would be inserted using searchsorted and then verify the position using where."
+]
+
+set_searching_cornercases_QUESTIONS = [
+"Given A = np.array([3,7,2,9,5]), find the flat index of the maximum element using argmax.",
+"Given A = np.array([[3,7,2],[9,5,1]]), compute the column index of the maximum value in each row using argmax with axis.",
+"Given A = np.array([[3,7,2],[9,5,1]]), compute the row index of the minimum value in each column using argmin with axis.",
+"Given A = np.array([np.nan,4,2,8,np.nan,5]), find the index of the maximum value ignoring NaNs using nanargmax.",
+"Given A = np.array([np.nan,4,2,8,np.nan,5]), find the index of the minimum value ignoring NaNs using nanargmin.",
+"Given A = np.array([[1,0,3],[0,5,0],[7,0,9]]), return the indices of non-zero elements using nonzero.",
+"Given A = np.array([[1,0,3],[0,5,0],[7,0,9]]), return the coordinates of non-zero elements using argwhere.",
+"Given A = np.array([[1,0,3],[0,5,0],[7,0,9]]), return flattened indices of non-zero elements using flatnonzero.",
+"Given A = np.arange(1,10).reshape(3,3), use where with only a condition to return indices of elements greater than 5.",
+"Given A = np.arange(1,10).reshape(3,3), use where to replace elements greater than 5 with -1.",
+"Given A = np.arange(1,10), create a new array where values greater than the mean remain unchanged and others become 0 using where.",
+"Given A = np.array([10,20,30,40,50]), find insertion index of value 30 using searchsorted with side='left'.",
+"Given A = np.array([10,20,30,40,50]), find insertion index of value 30 using searchsorted with side='right'.",
+"Given A = np.array([10,20,30,40,50]), find insertion indices of [5,25,55] using searchsorted.",
+"Given A = np.array([1,4,7,2,5,8,3,6,9]), extract elements greater than 5 using extract.",
+"Given A = np.array([1,4,7,2,5,8,3,6,9]), extract elements that are multiples of 3 using extract.",
+"Given A = np.array([[2,5,1],[8,3,7],[4,9,6]]), find coordinates of elements greater than 6 using argwhere.",
+"Given A = np.array([[2,5,1],[8,3,7],[4,9,6]]), extract elements greater than 6 using extract.",
+"Given A = np.array([[np.nan,5,1],[8,3,np.nan],[4,9,6]]), find the flat index of the maximum value ignoring NaNs.",
+"Given A = np.array([[2,5,1],[8,3,7],[4,9,6]]), find indices of elements greater than the column mean using where."
+]
+
