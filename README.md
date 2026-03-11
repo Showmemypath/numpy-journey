@@ -5,6 +5,8 @@ I don't follow a fixed approach , I occasionally change my approach if I find a 
 The Goal isn't to follow a strict plan but to build understanding .
 But there are some rules like changes compliment the previous attempts as well , I can't just switch to something entirely different that is different from what I was doing before
 
+I try to do a good amount of questions daily , even if i have no time I would do atleast 1 question and commit it 
+
 #### Current Practices
 
 ##### Daily Speed Drills
