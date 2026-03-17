@@ -16,5 +16,21 @@
     "questions": 20,
     "total_time_seconds": 1115.2118861675262,
     "finished": true
+  },
+  {
+    "date": "2026-03-17T18:16:53.758783",
+    "seed": 8234051,
+    "questions": 20,
+    "total_time_seconds": 2398.3204593658447,
+    "avg_seconds_per_question": 119.91602296829224,
+    "topics": {
+      "dtypes": 2,
+      "sorting": 4,
+      "searching": 5,
+      "broadcasting": 4,
+      "statisticalAgrregation": 2,
+      "counting": 3
+    },
+    "attempted_all": true
   }
 ]
