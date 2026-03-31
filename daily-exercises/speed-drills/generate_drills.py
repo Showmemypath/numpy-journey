@@ -115,8 +115,7 @@ STATS_FILE = BASE_DIR / "drill_stats.json"
 # SETTINGS
 # -----------------
 
-NUM_QUESTIONS = 20
-
+NUM_QUESTIONS = 15
 SEED = random.randint(0, 10_000_000)
 random.seed(SEED)
 
@@ -194,6 +193,7 @@ cells.append({
 "import time, json\n",
 "from pathlib import Path\n",
 "from datetime import datetime\n",
+"from datetime import datetime\n"
 
 f"SEED = {SEED}\n",
 f"NUM_QUESTIONS = {NUM_QUESTIONS}\n",
@@ -201,6 +201,7 @@ f"STATS_FILE = r\"{STATS_FILE}\"\n",
 f"TOPIC_COUNTS = {topic_counts}\n",
 
 "\nstart_time = time.time()\n",
+"\nstart_timestamp = datetime.now()\n"
 "print('Timer started')\n"
 
 ]
@@ -248,6 +249,7 @@ cells.append({
 "source":[
 
 "end_time = time.time()\n",
+"end_timestamp = datetime.now()\n"
 "total_time = end_time - start_time\n",
 "avg_time = total_time / NUM_QUESTIONS\n",
 
@@ -259,6 +261,8 @@ cells.append({
 
 "\nentry = {\n",
 "    'date': datetime.now().isoformat(),\n",
+"    'start_time':start_timestamp.isoformat(),\n",
+"    'end_time':end_timestamp.isoformat(),\n",
 "    'seed': SEED,\n",
 "    'questions': NUM_QUESTIONS,\n",
 "    'total_time_seconds': total_time,\n",
