@@ -66,5 +66,24 @@
       "viewsCopies": 1
     },
     "attempted_all": true
+  },
+  {
+    "date": "2026-04-09T18:30:51.427719",
+    "start_time": "2026-04-09T17:57:16.398953",
+    "end_time": "2026-04-09T18:30:51.427221",
+    "seed": 5158520,
+    "questions": 15,
+    "total_time_seconds": 2015.028261423111,
+    "avg_seconds_per_question": 134.3352174282074,
+    "topics": {
+      "sorting": 3,
+      "searching": 3,
+      "broadcasting": 2,
+      "statisticalAgrregation": 2,
+      "indexingSlicing": 3,
+      "dtypes": 1,
+      "boolean": 1
+    },
+    "attempted_all": true
   }
 ]
